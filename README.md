@@ -6,7 +6,7 @@ En matemáticas, la sucesión o serie de Fibonacci es la siguiente sucesión inf
 
 # Contenido
 
-- Función finobacci
+- Función fibonacci
 - Test con jest
 
 # Fibonacci spiral
