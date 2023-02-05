@@ -4,9 +4,11 @@
  * @returns {string} Fibonacci series separated by commas
  */
 function fibonacci (serieValue) {
-  if (serieValue === 0) return 0
+  if (typeof serieValue !== 'number') throw new Error(`${serieValue} is not a number`)
 
-  const secuence = [1, 1]
+  serieValue = Number.parseInt(serieValue)
+
+  const secuence = (serieValue === 0) ? [] : [1, 1]
 
   for (let i = 2; i < serieValue; i++) {
     secuence.push(secuence[i - 1] + secuence[i - 2])
@@ -15,7 +17,7 @@ function fibonacci (serieValue) {
   secuence.length = serieValue
   secuence.unshift(0)
 
-  return secuence.join()
+  return secuence
 }
 
 module.exports = fibonacci
