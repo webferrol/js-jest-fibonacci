@@ -1,7 +1,7 @@
 /**
- * Función que retorna la serie de Fibonacci
- * @param {number} serieValue Número items para mostrar en la serie
- * @returns {string} Serie de Fibonacci separado por comas
+ * This function returns numbers of Fibonacci
+ * @param {number} serieValue Number of items to display in the Fibonacci series
+ * @returns {string} Fibonacci series separated by commas
  */
 function fibonacci (serieValue) {
   if (serieValue === 0) return 0
